@@ -1,96 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-<title>chikipiki</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>chikipiki</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
 
-    <table>
-        <tr>
-            <td><img src="https://downloadwap.com/thumbs2/wallpapers/p2ls/2019/fcelebs/52/124eca9212960683.jpg" width="300" alt="error"></td>
-            <td>    
-                <h3>Владос</h3>
-                <p><em>люблю спорт</em></p>
-                <p>читаю книги</p>
-                <p><strong>всем <em>привет</em></strong></p>
-            </td>
-        </tr>
-    </table>
+    <body>
+        
+        <div class="container">
 
-    <hr>
+            <div class="info">
+                <img src="https://downloadwap.com/thumbs2/wallpapers/p2ls/2019/fcelebs/52/124eca9212960683.jpg" alt="error" class="avatar"> 
 
-    <h2>игра 'найди собакена'</h2>
-    <ul type="square">
-        <!--<a href="link" //для возможности перейти по ссылке target="_blank"> // для того чтобы с сайт открывался в новой вкладке-->
-        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">может тут?</a></li>
-        <li><a href="https://www.youtube.com/watch?v=AS0f99Ewd2o" target="_blank">100% тут</a></li>
-        <li><a href="https://www.youtube.com/watch?v=xWDf0WSWKXw" target="_blank">его тут нет</a></li>
-    </ul>
+                <div class="info-text">
+                    <h2>Владос</h2>
+                    <p><em>люблю спорт</em></p>
+                    <p>читаю книги</p>
+                    <p><strong>всем <em>привет</em></strong></p>
+                </div>
+            </div>
 
-    <h2>мои хобби</h2>
-    <ol> <!-- <ol type="I">  для перечисления с использованием римских чисел-->
-        <li>учить уроки</li>
-        <li>пить кокаколу</li>
-        <li>ходить в качалку</li>
-    </ol>
+            <hr>
+            <br>
+            
+            <div class="sobaka">
+                <h2>игра 'найди собакена'</h2>
 
-    <h2>анекдоты</h2>
-    <a href="prikoli.html" target="_blank">глянуть</a>
-    
-    <h2>табличка</h2>
-    <table border="1" cellspacing="7">
-        <thead>
-            <tr>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>левая</td>
-                <td>центр</td>
-                <td>правая</td>
-            </tr>
-            <tr>
-                <td>тут</td>
-                <td>должна быть</td>
-                <td>табличка</td>
-            </tr>
-        </tbody>
-        <tfoot></tfoot>
-    </table>
+                <!--<a href="link" //для возможности перейти по ссылке target="_blank"> // для того чтобы с сайт открывался в новой вкладке-->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">может тут?</a> |
+                <a href="https://www.youtube.com/watch?v=AS0f99Ewd2o" target="_blank">100% тут</a> |
+                <a href="https://www.youtube.com/watch?v=xWDf0WSWKXw" target="_blank">его тут нет</a> 
+            </div>
 
-    <br>
-    <hr>
+            <br>
 
-    <h2>связаться со мной</h2>
+            <div class="card bg-red">
+                <h2>мои хобби</h2>
+                <ol class="list"> <!-- <ol type="I">  для перечисления с использованием римских чисел-->
+                    <li>учить уроки</li>
+                    <li>пить кокаколу</li>
+                    <li>ходить в качалку</li>
+                </ol>
+            </div>
 
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="писать имя тут...">
+            <div class="card bg-orange">
+                <h2>анекдоты</h2>
+                <a href="prikoli.html" target="_blank">глянуть</a>
+            </div>
 
-        <br>
+            <div class="card bg-yellow">
+                <h2>табличка</h2>
+                <table class="table">
+                        <tr>
+                            <!-- td -->
+                            <th>автор</th>
+                            <th>книга</th>
+                            <th>оценка</th>
+                        </tr>
+                        <tr>
+                            <th>1.1</th>
+                            <th>2.1</th>
+                            <th>3.1</th>
+                        </tr>
+                        <tr>
+                            <th>1.2</th>
+                            <th>2.2</th>
+                            <th>3.2</th>
+                        </tr>
+                        <tr>
+                            <th>1.3</th>
+                            <th>2.3</th>
+                            <th>3.3</th>
+                        </tr>
+                        <tr>
+                            <th>1.4</th>
+                            <th>2.4</th>
+                            <th>3.4</th>
+                        </tr>
+                        <tr>
+                            <th>1.5</th>
+                            <th>2.5</th>
+                            <th>3.5</th>
+                        </tr>
+                </table>
+            </div>
 
-        <label for="email">Ваша почта:</label>
-        <input type="text" id="email" placeholder="писать почту тут...">
+            <br>
+            <hr>
 
-        <br>
+            <div class="card bg-violet">
+                <h2>связаться со мной</h2>
 
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea name="" id="text" cols="15" rows="2"></textarea>
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="писать имя тут...">
+                        </div>
 
-        <br>
+                        <div class="form-group">
+                            <label for="email">Ваша почта:</label>
+                            <input type="text" id="email" placeholder="писать почту тут...">
+                        </div>
+                    </div>
 
-        <input type="submit" value="связаться">
-    </form>
+                    <br>
 
-    <br>
-    <hr>
+                    <div class="form-group">
+                        <label for="text">Ваше сообщение:</label>
+                        <textarea name="" id="text" cols="60%" rows="2"></textarea>
+                    </div>
 
-    <h2>secret</h2>
-    <a href="secret.html" target="_blank">?</a>
-</body>
+                    <input class="btn" type="submit" value="связаться">
+                </form>
+            </div>
+
+            <br>
+            <hr>
+
+            <div class="card bg-green">
+                <h2>secret</h2>
+                <a href="secret.html" target="_blank">?</a>
+            </div>
+
+            <div style="margin-bottom: 500px" ></div>
+        </div>
+    </body>
 </html>

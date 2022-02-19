@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin-left: 5px;
+}
+
+body{
+    background: rgb(71, 134, 252);
+    color: white;
+    
+    font-size:16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+
+    /*font: normal 16px 'Roboto', sans-serif;*/
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (max-width:700px){
+    .info{
+        text-align: center;
+        display:block;
+    }
+}
+
+.info-text{
+     margin-left: 20px;   
+}
+
+/* а отвечает за ссылки */
+a {
+    color: white;
+    text-decoration: none;
+}
+/* при наводке курсором ссылка в данном примере подчеркивается */
+a:hover{
+    text-decoration: underline;
+}
+/* если нажать и не отпускать, то текст будет серого цвета */
+a:active{
+    color:skyblue;
+}
+/* ссылка которую мы посетили будет гореть серым */
+/* a:visited{
+    color:rgb(219, 219, 219);
+} */
+
+
+/* если id, то вместо .avatar -> #avatar */
+.avatar{
+    width: 300px;
+    border-radius: 28px;
+    box-shadow: 2px 4px 4px;
+}
+
+/* p - все вложенные параграфы */
+.info p{
+    color:white;
+    margin: 0;
+    /* font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: none;
+    word-spacing: none; */
+}
+
+.sobaka{
+    background:rgba(39, 125, 238, 0.226);
+    padding: 15px;
+    padding-top: 0px;
+    border: 5px solid rgb(4, 196, 255);
+    margin: 10px;
+    border-right-style:dashed;
+    border-left-style:dashed;
+}
+
+.container{
+    /* max-width для адаптации под любую ширину */
+    max-width:100%;
+    margin:auto;
+    padding-top: 20px;
+}
+
+
+
+/* будет применяться ко всем div'ам, даже вложенным, но если будет '.box-model > div' будет означать что будет применяться ко всем ВЛОЖЕННЫМ div'ам */
+/*
+.box-model div{
+    float: left;
+    background: black;
+    height: 200px;
+    width: 25%;
+    border: 4px solid red;
+    box-sizing: border-box;
+}
+*/
+
+.bg-red{
+    background: rgba(255, 0, 0, 0.300);
+}
+.bg-orange{
+    background: rgba(255, 166, 0, 0.300);
+}
+.bg-yellow{
+    background: rgba(255, 255, 0, 0.300);
+}
+.bg-green{
+    background: rgba(0, 128, 0, 0.300);
+}
+.bg-violet{
+    background: rgba(238, 130, 238, 0.300);
+}
+
+.card {
+    padding: 15px 20px;
+    /* background: rgba(124, 54, 165, 0.705); */
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2{
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.list{
+    padding: 0 20px;
+}
+.list li{
+    margin-bottom: 10px;
+}
+
+.table{
+    width: 70%;
+}
+.table td {
+    padding-bottom: 5px;
+}
+/* .table td:nth-child(1){
+    color:rgb(81, 255, 0);
+} */
+.table tr:nth-child(odd){
+    background:rgba(255, 0, 0, 0.250);
+}
+.table tr:nth-child(even){
+    background:rgba(0, 128, 0, 0.250);
+}
+
+.form-group label{
+    display: block;
+}
+.form-group textarea,
+.form-group input{
+    width: 70%;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: rgb(255, 255, 255);
+    padding: 10px 5px 20px;
+    outline: none;
+    font-family: inherit;  
+}
+
+.row{
+    display: flex;
+}
+.row > .form-group{
+    width: 50%;
+    margin-right: 20px;
+}
+.row > .form-group:last-child{
+    margin-right: 0;
+}
+
+.btn{
+    background:rgb(255, 255, 255);
+    color: black;
+    padding: 10px 15px;
+    border:none;
+    font-family: inherit;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.9;
+}
